@@ -1,0 +1,57 @@
+- setup
+- introduction
+  - what is git
+  - distributed vs central
+  - snapshots
+  - (almost) everything is local
+- core git concepts
+  - main areas
+    - working
+    - staging
+    - history
+  - terminology/conventions
+    - upstream
+    - origin, etc?
+- git basics
+  - commands to do stuff
+    - git init
+    - git add
+    - git commit
+    - git status
+  - commands to undo stuff
+    - git checkout
+    - git reset
+    - git revert
+  - commands to share / collaborate
+    - git branch
+    - git clone
+    - git fetch
+    - git pull
+    - git push
+    - git remote
+- git configuration (name/email - anything else can probably left)
+- workflows
+  - git ignore
+  - good commit messages
+  - fork & branch
+  - merge & rebase
+    - merge
+      - basic usage of command, ff, no ff, etc
+    - rebase
+      - basic command
+      - interactive rebase
+      - 'why rebase'?
+      - when not to rebase
+  - pull requests
+  - conflicts
+- more advanced git
+  - cherry pick
+  - git hooks
+    - client hooks
+    - web hooks
+    - server hooks
+- integration
+  - quick overview of things that can hook into git/examples
+    - Jenkins, rundeck, circleCI, travis CI, magnum, heroku, etc
+  - Getting a project doing CI with Magnum CI
+  - Maybe as far as Heroku?
