@@ -2,13 +2,13 @@ Git Basics - Undoing
 ====================
 
 Since git stores snapshots of everything locally, it makes it easier to
-undo changes, or pull up files / versions of your proejct from a
+undo changes, or pull up files / versions of your project from a
 different point in time. The most common commands that you will use for
 working with your history are:
 
--   git checkout
--   git reset
--   git revert
+- git checkout
+- git reset
+- git revert
 
 `git checkout`
 --------------
@@ -17,8 +17,8 @@ Git checkout allows us to check out files, change sets or branches into
 the current working directory. For undoing changes, we will focus on
 checking out files, or files within a change set.
 
-quick undo
-----------
+### quick undo
+
 
 A useful way to use checkout is the command 'git checkout -- .', this
 will revert all of your modified files to the latest commit in your
@@ -28,8 +28,7 @@ longer want, and don't want comitted.
 {{example: --- open up a project, put a bunch of stuff into files, then
 git checkout -- .}}
 
-undoing a single file
----------------------
+### undoing a single file
 
 If you only want to undo changes to one file, instead of
 `git checkout -- .`, you can provide a file name:
@@ -43,13 +42,15 @@ of work.
 `git revert`
 ------------
 
+Usage:
+
 `git revert <commit>`
 
 Git revert will attempt to revert a previous commit by undoing the operation and making a new commit with the result. This prevents you from losing track of history which can be important, and helps make git revert a safer way of undoing changes.
 
-Git revert does not 'revert' back to a previous state (git reset does), but more like an undo and re-apply.
 
-```example:todo
+```
+TODO: finish
 - add file
 - make changes to file
 - commit

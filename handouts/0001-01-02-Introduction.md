@@ -3,12 +3,12 @@
 
 ## What this session will cover
 
-This training session aims to get you up and running with Git quickly, covering some of the core concepts behind git, the most common bread and butter commands, some more advanced use cases and if time allows, exmaples of how easily Git can integrate with third party services to help manage your builds, testing and deployment.
+This training session aims to get you up and running with Git quickly, covering some of the core concepts behind git, the most common commands and their uses, some more advanced use cases and if time allows - examples of how easily Git can integrate with third party services to help manage your builds, testing and deployment.
 
 The agenda will be:
 
 - What is git
-  - Distrbuted vs Central
+  - Distributed vs Central source control
   - Snapshots of everything
   - Explaining working, staging and history
 - Git Command Basics
@@ -31,7 +31,7 @@ The agenda will be:
 
 Git is an open source Distributed Version Control System (DVCS). O
 
-## Distrbuted vs Centralized
+## Distributed vs Centralized
 
 **Centralized**. One repo and lots of clients.
 

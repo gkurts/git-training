@@ -1,6 +1,6 @@
-Git Basics
-==========
+# Git Basics - Saving and Inspecting
 
+{todo: cut this section?}
 This section will cover some of the bread and butter commands that
 anyone using git should know, and will be the most frequently used
 commands regardless of the workflow you chose to use with git.
@@ -8,12 +8,14 @@ commands regardless of the workflow you chose to use with git.
 To demonstrate the usage of these commands, I will be working on a
 sample project (add url), to help demonstrate how these commands
 interact with your working environment
+{/todo}
 
-We will cover:
+Commands covered:
 
--   initializing a git repository - git init
--   adding files to the staging area - git add
--   committing files to the git history - git commit
+- Initializing a git repository - git init
+- Adding files to the staging area - git add
+- Committing files to the git history - git commit
+- Inspecting a repository - git status, git log
 
 `git init`
 ----------
@@ -31,11 +33,11 @@ you use this command. If you make further changes to a file that you
 want to be captured in the next commit, you will need to add the file
 again.
 
--   todo - expand
--   git add file
--   git add -a
--   git add -A
--   git add -u
+- todo - expand
+- git add file
+- git add -a
+- git add -A
+- git add -u
 
 `git status`
 ------------
@@ -43,6 +45,7 @@ again.
 Git status will show you a status of your current working directory,
 showing which files have been added, modified or untracked.
 
+{todo: don't have most of the below in handouts - walk through as demo?}
 ``` {.bash}
 On branch master
 Your branch is ahead of 'origin/master' by 4 commits.
@@ -104,24 +107,26 @@ of the shortcuts available with git commit which will be discussed next.
 `git commit`
 ------------
 
-Git commit will move changes from the staging area to the history. An
-important thing to note with git commit, is that the changes are only
-committed locally - and not pushed to a server. This allows you to
-commit early and often without worrying that other developers will be
-pulling down incomplete changes.
+Usage:
+```
+# commit staged snapshot
+git commit
+# commit staged files + modified tracked files
+git commit -a
+# add a commit message
+git commit -a -m "your commit message here"
+```
 
-The benefits of this include being able to adjust/revise your commits
-before sending to the server, being able to try out new ideas - and easy
-paths to revert / reset changes to get back to a previous state, or
-simply being able to jump between tasks/branches and not lose your work
-in progress.
+Git commit moves files from the staging area to the git history. It is important to note that the commit is not available to other people yet, as commit is a local operation.
 
-In the previous example from git status, the only file that would be
-part of the commit would be 'new file'. If you want to include all
-staged files as part of the commit, you can use the shortcut
-`git commit -a`
+If the '-m' option is left out, a text editor will open allowing you to enter in a commit message.
 
-TODO: commit messages commit -m "message", editor for commits?
+`git commit --ammend`
+----
+
+Add any staged changes to the last commit and ammend the commit message (optional).
+
+Useful for when you commit early and forget to add some files or when you make a mistake in the commit message.
 
 `git stash`
 -----------

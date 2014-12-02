@@ -409,7 +409,8 @@ Don't
 Model Git commit message
 ------------------------
 
-\`\`\` Capitalized, short (50 chars or less) summary
+```
+Capitalized, short (50 chars or less) summary
 
 More detailed explanatory text, if necessary. Wrap it to about 72
 characters or so. In some contexts, the first line is treated as the
@@ -429,7 +430,9 @@ Further paragraphs come after blank lines.
 -   Typically a hyphen or asterisk is used for the bullet, preceded by a
     single space, with blank lines in between, but conventions vary here
 
--   Use a hanging indent \`\`\`
+-   Use a hanging indent
+
+```
 
 ------------------------------------------------------------------------
 
