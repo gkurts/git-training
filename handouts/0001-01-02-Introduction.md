@@ -9,23 +9,25 @@ The agenda will be:
 
 - What is git
   - Distributed vs Central source control
-  - Snapshots of everything
-  - Explaining working, staging and history
+  - Snapshots of changes vs Detlas
+  - Explaining git states - working, staging and history
 - Git Command Basics
-  - Commands for making changes (init, status, add, commit, checkout)
-  - Commands for undoing(?) (reset, revert, checkout)
-  - Commands for collaborating/workflow? (clone, push, pull, branch)
+  - Saving changes (init, status, add, commit, checkout)
+  - Undoing (reset, revert, checkout)
+  - Collaboration (clone, push, pull, branch)
 - Git workflows and best practices
   - commit messages
   - git ignore
   - branch / pull / pull / forks / etc
-  - rebase
+  - Merge, rebase and resolving conflicts
 - Some advanced git concepts
   - git hooks
     - client
     - web
     - server
 - Git integrations
+  - MagnumCI
+  - Heroku
 
 # What is GIT
 
