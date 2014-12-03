@@ -1,3 +1,6 @@
+todo: explain
+git branch --track 2014-12-02 origin/2014-12-02
+
 - setup
 - introduction
   - what is git

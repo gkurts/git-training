@@ -12,11 +12,12 @@ that git provides to let you share and collaborate with others.
 The commands that we will discuss are:
 
 - git clone
+- git branch
 - git remote
 - git fetch
 - git pull
 - git push
-- git branch
+
 
 `git clone`
 -----------
@@ -41,22 +42,16 @@ By default, git add a remote for where you cloned this from called
 ------------
 
 Git remote allows you to create, view and share links with other
-repositories. Remotes act as aliases to other repositires to let you
+repositories. Remotes act as aliases to other repositories to let you
 easily work with them by being able to request changes, push changes,
 etc by short name.
 
-`git remote` will list the remotes setup for your repository.
-
-`git remote -v`
----------------
-
-`git remote -v` will display a more verbose output of your remotes,
-including the url and if you can fetch/push to it.
-
+Usage:
 ```
+# list remotes
+git remote
+# verbose list remotes
 git remote -v
-origin  https://github.com/e-schultz/git-training-app.git (fetch)
-origin  https://github.com/e-schultz/git-training-app.git (push)
 ```
 
 TODO: expand on forking / git remote -v,g git remote add
@@ -70,14 +65,89 @@ git fetch <remote>
 git fetch <remote> <branch>
 ```
 
-todo: expand
+Fetch all of the branches from the repository. This also downloads all of the required commits and files from the other repository.
 
 `git pull`
 ----
-todo: expand
 
+Usage:
+
+```
+git pull <remote>
+```
+
+Git pull will fetch the remote repository, and merge it. It  bundles git fetch and git merge into a single command.
+
+You can also do a rebase instead of a merge with the usage:
+
+```
+git pull --rebase <remote>
+```
 
 
 `git push`
-----
-todo: expand
+--------
+
+Usage:
+
+```
+# push a branch to the remote
+git push <remote> <branch>
+# force a push even if it's not a fast-forward merge
+git push <remote> --force
+# push all local branches
+git push remote --all
+```
+
+Force pushing
+-------------
+
+If you think as 'git pull' as merging remote changes into your local branch, git push is merging your local changes into a remote branch.
+
+If your local history has been re-written or diverged and can not do a fast-forward merge, then git will reject the push.
+
+Depending on the cause of this, you can either force a push - or pull, try and merge the changes/resolve conflicts and then push again.
+
+A common scenario where you might want to force a push is if you have a rebase.
+
+Scenario:
+
+* done a bunch of commits
+* pushed to a remote for review
+* done more commits
+* rebase from master
+* push again
+
+Git would reject this change unless you specify the --force flag. It is important however to only do a force push on changes that other developers are not relying on yet.
+
+
+
+`git branch`
+-------
+
+In some other source control systems like SVN - branching is considered a heavy operation, and should only be done for major long-term projects.
+
+With Git, branches are much more light weight - and become an integral part of most Git workflows.
+
+Usages:
+
+```
+# show local branches
+git branch
+# verbose information
+git branch -v
+# show remote branches
+git branch -r
+# create a new branch - does not switch to branch
+git branch <new branch>
+# delete a branch that has been merged
+git branch -d <branch name>
+# force delete a branch with unmerged changes
+git branch -D <branch name>
+```
+
+When creating a branch like this, it will not track it on a remote, and will not switch you to the current branch. A short-cut to create a new branch and switch to it: `git checkout -b <branchname>`
+
+Once you have changes in your branch that you want to push: `git push`, if your upstream is unaware of this branch you need to tell git what the upstream is:
+
+`git push --set-upstream origin chore-show-branch`

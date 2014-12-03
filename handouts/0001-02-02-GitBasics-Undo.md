@@ -1,4 +1,4 @@
-Git Basics - Undoing
+  Git Basics - Undoing
 ====================
 
 Since git stores snapshots of everything locally, it makes it easier to
@@ -50,14 +50,17 @@ Git revert will attempt to revert a previous commit by undoing the operation and
 
 
 ```
-TODO: finish
-- add file
-- make changes to file
-- commit
-- make more changes to file
-- commit
-- revert first commit
+# in server/index.js - change the static path to say 'badclient'
+git commit -a -m 'making a bad change'
+# in server/index.js - change port from 3000 to 4000
+git commit -a -m 'changing port'
+# we now want to revert badchange, but keep the port change
+# see the recent commits
+git reflog
+git revert <commit>
 ```
+
+If git is able to automatically revert the change without conflicts, it will prompt you for a commit message to show the revert. If there is an issue - you may need to manually fix the conflict, and then merge the results.
 
 
 `git reset`

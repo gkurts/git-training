@@ -28,16 +28,16 @@ This command creates the .git directory.
 ---------
 
 Git add will take a snapshot of the file and add it to the staging area.
+
 The snapshot that is captured is the state of the file at the time that
-you use this command. If you make further changes to a file that you
-want to be captured in the next commit, you will need to add the file
+you use this command.
+
+If further changes are made to a file,  you will need to add the file
 again.
 
-- todo - expand
-- git add file
-- git add -a
-- git add -A
-- git add -u
+- `git add <file>` -- add a file to the staging area
+- `git add -A` -- add changes from all untracked files
+- `git add -u` -- update tracked files
 
 `git status`
 ------------
