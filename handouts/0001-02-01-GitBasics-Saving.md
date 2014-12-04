@@ -66,10 +66,9 @@ Untracked files:
 slides.md
 ```
 
-Looking at the output from this command, we can see that
+Looking at the output from this command, we can see that:
 
-* slides.md is
-currently not being tracked
+* slides.md is currently not being tracked
 * client/index.html has been modified - and is not in staging
 * newfile.md is staged and ready to be committed
 
