@@ -77,4 +77,6 @@ Whereas reverting is designed to safely undo a public commit, git reset is desig
 
 reset example:
 - create branch, reset-example
-- in index/server.js  - remove a line, commit, remove a line, commit, etc.
+- in index/server.js  - add a function, commit, x2
+- git reset head~2 --- unstaged, not committed - but still in working
+- git reset head~2 -- hard --- changes get totally removed

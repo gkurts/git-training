@@ -22,18 +22,15 @@ Commands covered:
 
 Start tracking a project in Git.
 
-This command creates the .git directory.
+This command creates the .git directory. Most workflows typically have the repository created on your git host such as GitHub, GitLab, etc and you would clone it.
 
 `git add`
 ---------
 
 Git add will take a snapshot of the file and add it to the staging area.
 
-The snapshot that is captured is the state of the file at the time that
-you use this command.
-
 If further changes are made to a file,  you will need to add the file
-again.
+again for it to be included in the next commit.
 
 - `git add <file>` -- add a file to the staging area
 - `git add -A` -- add changes from all untracked files
@@ -46,7 +43,8 @@ Git status will show you a status of your current working directory,
 showing which files have been added, modified or untracked.
 
 {todo: don't have most of the below in handouts - walk through as demo?}
-``` {.bash}
+
+```
 On branch master
 Your branch is ahead of 'origin/master' by 4 commits.
 (use "git push" to publish your local commits)
@@ -68,9 +66,12 @@ Untracked files:
 slides.md
 ```
 
-Looking at the output from this command, we can see that \* slides.md is
-currently not being tracked \* client/index.html has been modified - and
-is not in staging \* newfile.md is staged and ready to be comitted
+Looking at the output from this command, we can see that
+
+* slides.md is
+currently not being tracked
+* client/index.html has been modified - and is not in staging
+* newfile.md is staged and ready to be committed
 
 If we make another change to newfile.md, the output from git status
 looks like:
@@ -99,10 +100,14 @@ slides.md
 ```
 
 New file is now listed as both a new file, and the contents of the file
-at the time I did 'git add' is what would be committed, however Git now
-sees that there are unstaged changes. To get these changes included in
-my next commit I need to either add them with git add again, or use some
-of the shortcuts available with git commit which will be discussed next.
+at the time I did 'git add' is what would be committed.
+
+Git now sees that there are unstaged changes. For these changes to be included in the next commit, I could:
+
+* `git add newfile.md` --- re-add the one file
+* `git add -u` - update all modified and tracked files files
+* `git add -A` - add all files tracked and untracked
+
 
 `git commit`
 ------------
@@ -121,10 +126,10 @@ Git commit moves files from the staging area to the git history. It is important
 
 If the '-m' option is left out, a text editor will open allowing you to enter in a commit message.
 
-`git commit --ammend`
-----
+`git commit --amend`
+--------------------
 
-Add any staged changes to the last commit and ammend the commit message (optional).
+Add any staged changes to the last commit and amend the commit message (optional).
 
 Useful for when you commit early and forget to add some files or when you make a mistake in the commit message.
 

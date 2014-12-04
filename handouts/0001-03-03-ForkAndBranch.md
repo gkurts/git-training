@@ -27,11 +27,9 @@ Keeping in synch:
 - git pull upstream
 - git pull upstream --rebase
 
-With this workflow, you can allow for a limited set of contributers/maintaieners for the main repo, but people can do whatever they want on their own repositories.
+With this workflow, you can allow for a limited set of contributers for the main repo, but people have freedom over their own forks.
 
 When it's time for them to share - issue a pull request, and merge.
-
-
 
 ## Branching Off
 

@@ -46,10 +46,9 @@ Further paragraphs come after blank lines.
 
 ## `git commit --amend`
 
-Add any staged changes to the last commit and ammend the commit message (optional).
+Add any staged changes to the last commit and amend the commit message (optional).
 
 Useful for when you commit early and forget to add some files or when you make a mistake in the commit message.
-
 
 ## `git stash`
 

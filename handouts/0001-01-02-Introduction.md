@@ -3,16 +3,15 @@
 
 ## What this session will cover
 
-This training session aims to get you up and running with Git quickly, covering some of the core concepts behind git, the most common commands and their uses, some more advanced use cases and if time allows - examples of how easily Git can integrate with third party services to help manage your builds, testing and deployment.
-
 The agenda will be:
 
 - What is git
   - Distributed vs Central source control
-  - Snapshots of changes vs Detlas
-  - Explaining git states - working, staging and history
+  - Snapshots of changes vs Deltas
+  - Three states of git: History, Staging, Working
 - Git Command Basics
-  - Saving changes (init, status, add, commit, checkout)
+  - Saving changes (init, status, add, commit)
+  - Viewing history (log)
   - Undoing (reset, revert, checkout)
   - Collaboration (clone, push, pull, branch)
 - Git workflows and best practices
@@ -41,7 +40,7 @@ Git is an open source Distributed Version Control System (DVCS). O
 
 ## Snapshots vs Deltas
 
-In some VCS like SVN, it is the delta/changes in files that are recorded over time. When recording Detlas - it is only the changes in each file that gets recorded.
+In some VCS like SVN, it is the delta/changes in files that are recorded over time. When recording a delta - it is only the changes in each file that gets recorded.
 
 With Git, a snapshot is taken - a full version of the files in the staging area is saved when a commit is done.
 
