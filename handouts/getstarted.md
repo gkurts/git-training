@@ -95,8 +95,6 @@ Distributed
 
 **Distributed**. One repo with lots of client repos, each with a user.
 
-> > > notes :TODO
-
 ------------------------------------------------------------------------
 
 Lightweight branches
@@ -136,8 +134,6 @@ temporary files again.
 
 First-class and dedicated staging area + patch staging (which can be
 interactive).
-
-> > > notes TODO
 
 ------------------------------------------------------------------------
 

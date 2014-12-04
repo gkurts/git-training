@@ -52,10 +52,6 @@ With Git, a snapshot is taken - a full version of the files in the staging area 
 
 ## Lightweight Branches
 
-TODO: expand
-
 ## Easily Curated Commits
-
-TODO: expand
 
 Since Git stores full versions of the files with each commit, and everything is stored locally - it's easier to curate commits (expand this)

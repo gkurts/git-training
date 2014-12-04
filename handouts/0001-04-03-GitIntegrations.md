@@ -60,4 +60,4 @@ Now when a change is pushed to github, Magnum CI will try and run a build and ru
 
 # Heroku Deployment
 
-TODO: do this? - go as far as downloading/installing toolbelt, etc - or just show 'heroku create'?
+Let's discuss using Git for deploying to Heroku.

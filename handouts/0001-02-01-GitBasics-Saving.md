@@ -131,4 +131,4 @@ Useful for when you commit early and forget to add some files or when you make a
 `git stash`
 -----------
 
-TODO: include git stash or not?
+Let's briefly talk about `git stash`.
