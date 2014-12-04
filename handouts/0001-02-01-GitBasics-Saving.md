@@ -1,14 +1,12 @@
 # Git Basics - Saving and Inspecting
 
-{todo: cut this section?}
-This section will cover some of the bread and butter commands that
+This section will cover some of most basic git commands, ones that that
 anyone using git should know, and will be the most frequently used
 commands regardless of the workflow you chose to use with git.
 
 To demonstrate the usage of these commands, I will be working on a
 sample project (add url), to help demonstrate how these commands
 interact with your working environment
-{/todo}
 
 Commands covered:
 
@@ -41,8 +39,6 @@ again for it to be included in the next commit.
 
 Git status will show you a status of your current working directory,
 showing which files have been added, modified or untracked.
-
-{todo: don't have most of the below in handouts - walk through as demo?}
 
 ```
 On branch master

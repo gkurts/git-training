@@ -69,11 +69,11 @@ If git is able to automatically revert the change without conflicts, it will pro
 git reset acts as a bit of a permeant 'undo' and git, and if used incorrectly - could cause you to lose work. When compared to git revert, which allows you to select commits from any point in time - git reset can only work backwards from your current (head/commit?)
 
 
-todo: expand on when git reset vs git revert, revert - undoing 'public' changes, reset = 'local'?
->>>incorperate?
+See also:
+
 https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
+
 Whereas reverting is designed to safely undo a public commit, git reset is designed to undo local changes. Because of their distinct goals, the two commands are implemented differently: resetting completely removes a changeset, whereas reverting maintains the original changeset and uses a new commit to apply the undo.
-<<<
 
 reset example:
 - create branch, reset-example

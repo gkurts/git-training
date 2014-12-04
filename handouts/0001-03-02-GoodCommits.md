@@ -53,5 +53,3 @@ Useful for when you commit early and forget to add some files or when you make a
 ## `git stash`
 
 Save the uncommitted changes in the working directory and the staging area and go back to a clean working directory.
-
-todo: examples of using git stash
