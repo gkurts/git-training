@@ -448,7 +448,7 @@ git pull --rebase <remote>
 
 # git fetch vs git pull
 
-The primary difference between git fetch and git pull, is that git pull will fetch the changes then merge then into your current branch. Git fetch will just get the changes, but will not merge them yet.
+The primary difference between git fetch and git pull, is that git pull will fetch the changes then merge them into your current branch. Git fetch will just get the changes, but will not merge them yet.
 
 `git push`
 --------
